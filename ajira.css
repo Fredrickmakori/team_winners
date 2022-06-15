@@ -1,0 +1,7 @@
+*{
+    align-content: center;
+    background-image: repeating-linear-gradient(180deg,hsla(0,0%,75%,0),hsla(0,0%,75%,1))
+}
+header{
+    color: teal;
+}
