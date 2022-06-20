@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,40 @@
     <title>Ajira form</title>
     <link rel="stylesheet" href="ajira.css">
 </head>
-    
+
 
 <body>
+    <header>
+        <h1 id="heading">Welcome to our registration portal</h1>
+    </header>
+
     <div class="container">
-        <header>
-            Welcome to the registration portal
-        </header>
-        <form action="GET">
-            <label for="name">Name<input type="text" placeholder="name" id="name"></label>
-            <br>
-            <label for="email">Email<input type="email" id="text" placeholder="email"></label>
-             <button type="button" onclick="validate()">submit</button>
-            <br>
-            <label for="age" type>Age<input type="number" placeholder="age" id="age"></label>
-            <button class="btn" type="button" id="submit">submit</button>
-            <p id="demo"></p>
-            <label for="What is your current occupation">
-                What is your current occupation
-                <ol>
-                    <li><input type="checkbox">student </li>
-                    <li><input type="checkbox">employed</li>
-                    <li><input type="checkbox">government</li>
-                    <li><input type="checkbox">others</li>
-                </ol>
-            </label>
+        <form method="post" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="de3c2c8d-5bc8-49fa-bfb9-38cabdd11094">
+            <input type="hidden" name="from_name" value="Applying for Ajira">
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="First Name" placeholder="Your name..">
+            <label for="age" type>Age</label>
+            <input type="number" placeholder="Age.." id="age" name="My Age">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" placeholder="Your Email..">
 
+            <label for="occupation">Current occupation</label>
+            <select id="occupation" name="My current occupation">
+                <option value="Student">Student</option>
+                <option value="Employed already">Employed</option>
+                <option value="In government">Government</option>
+                <option value="Am self employed">Other...</option>
+            </select>
+            <label for="subject">Enter occupation here if other</label>
+            <textarea id="subject" name="job" placeholder="Write something.." style="height:60px"></textarea>
+            <input type="submit" value="Submit">
         </form>
-        <div>
-
-        </div>
-
     </div>
-    <script src="validate/validate.js"></script>
+    <script src="validate/validate.js" defer></script>
 
 </body>
+
 </html>
