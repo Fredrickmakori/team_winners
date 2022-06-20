@@ -1,7 +1,50 @@
 *{
     align-content: center;
-    background-image: repeating-linear-gradient(180deg,hsla(0,0%,75%,0),hsla(0,0%,75%,1))
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 header{
+    display: block;
     color: teal;
+    font-weight: 900;
+    font-size: xx-large;
+}
+h1 {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: xx-large;
+     margin-right: 40%;
+}
+.container {
+    display: grid;
+    background-image: repeating-linear-gradient(180deg, hsla(0, 0%, 75%, 0), hsla(0, 0%, 75%, 1));
+
+    height: 40%;
+}
+image{
+    width: 100%;
+    margin: 7px;
+}
+input{
+    margin: auto;
+    display: block;
+    
+}
+
+input:hover{
+    cursor: pointer;
+    border: 1mm solid fuchsia;
+}
+.hide{
+    display: none;
+}
+div {
+    size-adjust: 60px;
+    display: contents;
+}
+lable {
+    padding: 2%;
+    margin: 20px;
+}
+body{
+    background-image: radial-gradient(rgb(31, 70, 66),rgb(91, 128, 163),green);
+    background-repeat: initial;
 }

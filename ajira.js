@@ -1,10 +1,1 @@
-
-
-
-
-
-
-
-
-
-const questions[getElementById("question no")]
+print("hello world")

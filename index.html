@@ -7,27 +7,39 @@
     <title>Ajira form</title>
     <link rel="stylesheet" href="ajira.css">
 </head>
+    
+
 <body>
     <div class="container">
         <header>
             Welcome to the registration portal
         </header>
-        <p>What is your name?</p>
+        <form action="GET">
+            <label for="name">Name<input type="text" placeholder="name" id="name"></label>
+            <br>
+            <label for="email">Email<input type="email" id="text" placeholder="email"></label>
+             <button type="button" onclick="validate()">submit</button>
+            <br>
+            <label for="age" type>Age<input type="number" placeholder="age" id="age"></label>
+            <button class="btn" type="button" id="submit">submit</button>
+            <p id="demo"></p>
+            <label for="What is your current occupation">
+                What is your current occupation
+                <ol>
+                    <li><input type="checkbox">student </li>
+                    <li><input type="checkbox">employed</li>
+                    <li><input type="checkbox">government</li>
+                    <li><input type="checkbox">others</li>
+                </ol>
+            </label>
 
-        <input type="text">
-        <p>What is your gender</p>
-        <input type="text">
-        <p>How old are you</p>
-        <input type="text">
-        <p>What is your nationality</p>
-        <input type="text">
-        <p>What is your current occupation</p>
-        <input type="text">
-
+        </form>
         <div>
 
         </div>
 
     </div>
+    <script src="validate/validate.js"></script>
+
 </body>
 </html>
